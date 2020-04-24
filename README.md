@@ -6,7 +6,8 @@ There are many variations of the game using colour and letter codes but for simp
 
 
 ### How to play:
-- when player starts game, program randomly generates a 4-digit mastercode, ranging from 1-6, inclusive of repeat numbers
+- when player starts game, there are 4 choices of difficulty (1-4), where the code can include numbers from 1-6, 1-7, 1-8 or 1-9 respectively; default difficulty is 1
+- program randomly generates a 4-digit mastercode, inclusive of repeat numbers
 - player has 10 tries to guess the code
 - after every try, program returns a 2-number list, which corresponds to the number of matching digits in correct positions, and number of matching digits in different positions respectively
 - if player guesses the code correctly within 10 tries, he wins and can choose to play again
