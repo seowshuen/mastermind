@@ -6,8 +6,6 @@ class Guess_no(sm.SM):
     
     def __init__(self):
         self.start_state = 1
-       
-        
         self.playing = True
     
     def get_next_values(self, state, inp):
@@ -44,16 +42,16 @@ class Guess_no(sm.SM):
         diff = input('Choose your difficulty (1,2,3,4):')
         self.start()
         if diff=='2':
-            print('Guess the 4-digit code (1-7)')
+            print('Guess the 4-digit code (1-7):')
             self.codelst = [random.randrange(1,8) for i in range(4)]
         elif diff=='3':
-            print('Guess the 4-digit code (1-8)')
+            print('Guess the 4-digit code (1-8):')
             self.codelst = [random.randrange(1,9) for i in range(4)]
         elif diff=='4':
-            print('Guess the 4-digit code (1-9)')
+            print('Guess the 4-digit code (1-9):')
             self.codelst = [random.randrange(1,10) for i in range(4)]
         else:
-            print('Guess the 4-digit code (1-6)')
+            print('Guess the 4-digit code (1-6):')
             self.codelst = [random.randrange(1,7) for i in range(4)]
         self.code = ''.join(map(str,self.codelst))
         while self.playing:
